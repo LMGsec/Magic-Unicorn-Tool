@@ -264,7 +264,7 @@ for line in in_file:
                 logged_reads = reads_by_id[activity_item_id]
                 reads_by_id[activity_item_id] = logged_reads + (date_stamp + "\t" + time_stamp + "\t" + activity_type +"\t" + app_type + "\t" + message_ids[activity_item_id]['Subject'] + "\t" + message_ids[activity_item_id]['From'] + "\t" + message_ids[activity_item_id]['Received'] + ips_found[len(ips_found)-1] + "\n")
             else:
-                reads_by_id[activity_item_id] =  "Date\tTime\tType\tPlatform\tSubject\tFrom\tReceived Date\tLast Login IP\n" + (date_stamp + "\t" + time_stamp + "\t" + activity_type + "\t" + app_type + "\t" + message_ids[activity_item_id]['Subject'] + "\t" + message_ids[activity_item_id]['From'] + "\t" + message_ids[activity_item_id]['Received'] + ips_found[len(ips_found)-1] + "\n")
+                reads_by_id[activity_item_id] =  "Date\tTime\tType\tPlatform\tSubject\tFrom\tReceived Date\tLast Login IP\n" + (date_stamp + "\t" + time_stamp + "\t" + activity_type + "\t" + app_type + "\t" + message_ids[activity_item_id]['Subject'] + "\t" + message_ids[activity_item_id]['From'] + "\t" + message_ids[activity_item_id]['Received'] + "\t" + ips_found[len(ips_found)-1] + "\n")
             reads_by_time.append(date_stamp + "\t" + time_stamp + "\t" + activity_type +"\t" + app_type + "\t" + message_ids[activity_item_id]['Subject'] + "\t" + message_ids[activity_item_id]['From'] + "\t" + message_ids[activity_item_id]['Received'] + "\t" + ips_found[len(ips_found)-1] + "\n")
 
         if(activity_type=='SearchResult'):
