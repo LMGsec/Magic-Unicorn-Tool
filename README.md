@@ -1,6 +1,6 @@
 ## Magic-Unicorn-Tool
 
-This is the beta release of our Office 365 Activities API report parsing tool. It is offered under the GNU General Public License.
+This is the beta release of our Office 365 Activities API report parsing tool. It is offered under the BSD License.
 
 ## Requirements
     - Python 3.4.3 or above
@@ -11,7 +11,12 @@ This is the beta release of our Office 365 Activities API report parsing tool. I
     reports based on the data parsed. All testing for the script was done using Powershell.
 
 ## Basic Usage
-    > python .\MagicUnicorn_v1.py -i "Microsoft Activities API csv file" -o "Output directory" -t "General report title"
+    Step one - retrieve an activities report using the retriever.py script. This altered version of the original retiever.py
+    script is designed to return data in ascending chronological order with the encoding set as utf-8 to avoid any parsing
+    errors.
+
+    Step two - run the Magic Unicorn parser using the following command syntax
+    > MagicUnicorn_v1.py -i "Microsoft Activities API csv file" -o "Output directory" -t "General report title"
 
 ## Reports Generated
     - "General report title"-attachments-activity.tsv
