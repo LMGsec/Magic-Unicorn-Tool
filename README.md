@@ -22,4 +22,4 @@ This is the beta release of our Office 365 Activities API report parsing tool. I
 
 ## Activities API Data Aquisition
     Modified versions of the CrowdStrike retriever and activity scripts are included in this repository. The MagicUnicorn_v1 parser is designed 
-    to work exclusively with the output from these scripts. Directions for use are included in the "Retriever Scripts" folder.
+    to work exclusively with the output from these scripts. Directions for use are included in the "CrowdStrike-Retriever-Scripts" folder.
