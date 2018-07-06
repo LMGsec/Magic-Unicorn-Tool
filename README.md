@@ -1,3 +1,15 @@
+## Update 2018-07-06
+
+Access to the Activities API has been removed by Microsoft. The retriever tools will no longer pull report data.
+
+
+
+
+
+
+
+
+
 ## Magic-Unicorn-Tool
 
 This is the beta release of our Office 365 Activities API report parsing tool. It is offered under the BSD License.
